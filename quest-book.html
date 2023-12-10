@@ -49,7 +49,8 @@ window["MusicData"] = [
         <img id="iconPlayLoop"   src="images/icon-play-loop.jpg" />        
         <img id="iconPlayAll"    src="images/icon-play-all.jpg" />        
         <img id="iconVolumeUp"   src="images/icon-volume-up.jpg" />        
-        <img id="iconVolumeDown" src="images/icon-volume-down.jpg" />     		
+        <img id="iconVolumeDown" src="images/icon-volume-down.jpg" />
+	<video id="tangyvideo" loop="true" src="video/drone-480.mov" autoplay></video>
     </a-assets>
 
     <a-sky color = "#16F1DD"></a-sky>
@@ -113,6 +114,7 @@ window["MusicData"] = [
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
+    <a-video src="#tangyvideo" width="16" height="9" position="2 1 -1.5"></a-video>
 </a-scene>
 
 </body>
