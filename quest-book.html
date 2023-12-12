@@ -130,7 +130,8 @@ AFRAME.registerComponent('video-controls', {
 
     <a-entity
         id="interactive-book"
-        position="-1 1 -1.5" 
+        position="-1 1 -10"
+	rotation="0 90 0"
         interactive-book="fileName: assets/CharlottesWeb.pdf;
                           pageWidth: 646; pageHeight: 958;
                           coverText: Charlotte's Web;
@@ -138,7 +139,7 @@ AFRAME.registerComponent('video-controls', {
     </a-entity>
         			
     <a-entity
-        position = "1 1 -1.5"
+        position = "1 1 -10"
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
