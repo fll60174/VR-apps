@@ -89,7 +89,9 @@ AFRAME.registerComponent('video-controls', {
         player-move="controllerListenerId: #controller-data;
                      navigationMeshClass: environmentGround;">
         
-        <a-camera></a-camera>
+        <a-camera>
+		<a-cursor></a-cursor>
+	</a-camera>
     
         <a-entity 
             id="controller-data" 
