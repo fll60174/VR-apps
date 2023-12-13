@@ -66,6 +66,7 @@ AFRAME.registerComponent('video-controls', {
         <img id="gradient" src="images/gradient-fade.png" />
         <img id="border"   src="images/border.png" />
 	<img id="bookcover"   src="images/CharlottesWeb-Cover.jpg" />
+	<img id="crafting"   src="images/crafting.png" />
 	<img id="iconBlank"      src="images/icon-blank.jpg" />        
         <img id="iconWait"       src="images/icon-wait.jpg" />        
         <img id="iconPlay"       src="images/icon-play.jpg" />        
@@ -145,6 +146,12 @@ AFRAME.registerComponent('video-controls', {
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
+	
+    <a-entity 
+	    position="-5 1 -5"
+	    link="href: video-texture.html; title: Crafting; image: #crafting">	
+    </a-entity>
+
     <a-plane
 		id = "video-border"
 		width = "1.7" height = "1.0"
