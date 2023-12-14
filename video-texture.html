@@ -53,7 +53,9 @@ AFRAME.registerComponent('video-controls', {
 		<a-entity id="leftHand" laser-controls="hand: left" raycaster="" line="color: #FF00FF"></a-entity>
 		<a-entity id="rightHand" laser-controls="hand: right" raycaster="" line="color: #FFFF00"></a-entity>
 	</a-entity>
-	
+	<a-camera>
+		<a-cursor></a-cursor>
+	</a-camera>
 	<a-sky 
 		rotation = "0 0 0"
 		color = "#FFFFFF"
