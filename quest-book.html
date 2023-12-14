@@ -146,11 +146,7 @@ AFRAME.registerComponent('video-controls', {
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
-	
-    <a-entity 
-	    position="-5 1 -5"
-	    link="href: video-texture.html; title: Crafting; image: #crafting">	
-    </a-entity>
+    <a-link href="video-texture.html" position="-4 1 -5" image="#crafting"></a-link>	
 
     <a-plane
 		id = "video-border"
