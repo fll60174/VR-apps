@@ -90,7 +90,13 @@ AFRAME.registerComponent("music-player", {
         this.base.appendChild(this.imageArea);
 
         // "once" || "loop" || "all"
-        this.setPlayMode("once");
+        document.addEventListener("keyup", (e)=> {
+            if (e.code === "Digit1") {
+                this.setPlayMode("once");
+            } else if (e.code === "Digit2") {
+                this.setPlayMode("loop");
+            }
+        })
 
         let self = this;
 
@@ -125,7 +131,10 @@ AFRAME.registerComponent("music-player", {
                 self.pauseMusic();
             } else if (e.code === "KeyP") {
                 self.playMusic();
-            }k
+            } else if (e.code === "KeyF") {
+
+            }
+            
         });
     },
 
