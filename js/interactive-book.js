@@ -143,11 +143,11 @@ AFRAME.registerComponent("interactive-book", {
         
         // code to control book flip from keyboard
         document.addEventListener('keyup', (e) => {
-            if (e.code === 'Digit1') {
-                this.flip('left');
-            } else if (e.code === 'Digit2') {
+            if (e.code === 'KeyQ') {
                 this.flip('right');
-            }
+            } else if (e.code === 'KeyE') {
+                this.flip('left');
+            } 
         });
     },
 
