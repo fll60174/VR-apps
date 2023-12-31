@@ -3,12 +3,12 @@ AFRAME.registerComponent("interactive-book", {
     schema:
     {
         fileName:              {type: 'string',  default: "assets/wonderland.pdf"},
-        bookHeight:            {type: 'float',   default: 1.0},
+        bookHeight:            {type: 'float',   default: 1.2},
         pageWidth:             {type: 'float',   default: 646},
         pageHeight:            {type: 'float',   default: 968},
-        coverColor:            {type: 'color',   default: "#EEEEFF"},
+        coverColor:            {type: 'color',   default: "#FF0000"},
         coverText:             {type: 'string',  default: "Title Text"},
-        coverTextColor:        {type: 'color',   default: "#000337"},
+        coverTextColor:        {type: 'color',   default: "#FFFFFF"},
 
         // need to listen for control input to enable on trigger press, and map controller actions to gamepad-model
         controllerListenerId:  {type: 'string', default: "#controller-data"},
@@ -140,6 +140,15 @@ AFRAME.registerComponent("interactive-book", {
         this.enabledLight.setAttribute("material", { color: "#444444", emissive: "#BB0000" });
         this.enabledLight.setAttribute("position", {x: 0, y:this.data.bookHeight/2 + margin, z:0} );
         this.spine.appendChild(this.enabledLight);
+        
+        // code to control book flip from keyboard
+        document.addEventListener('keyup', (e) => {
+            if (e.code === 'Digit1') {
+                this.flip('left');
+            } else if (e.code === 'Digit2') {
+                this.flip('right');
+            }
+        });
     },
 
     // create a "book page" object: a box with two planes attached, 
@@ -391,19 +400,19 @@ AFRAME.registerComponent("interactive-book", {
         }
 
         // user can only interact with book if it is enabled
-        if ( !this.enabled )
-            return;
+        // if ( !this.enabled )
+        //     return;
 
-        if (this.controllerData.buttonA.pressed ||
-            this.controllerData.buttonX.pressed ||
-            this.controllerData.leftAxisX  < -0.90 ||
-            this.controllerData.rightAxisX < -0.90 )
-            this.flip("left");
+        // if (this.controllerData.buttonA.pressed ||
+        //     this.controllerData.buttonX.pressed ||
+        //     this.controllerData.leftAxisX  < -0.90 ||
+        //     this.controllerData.rightAxisX < -0.90 )
+        //     this.flip("left");
 
-        if (this.controllerData.buttonB.pressed ||
-            this.controllerData.buttonY.pressed ||
-            this.controllerData.leftAxisX  > 0.90 ||
-            this.controllerData.rightAxisX > 0.90 )
-            this.flip("right");
+        // if (this.controllerData.buttonB.pressed ||
+        //     this.controllerData.buttonY.pressed ||
+        //     this.controllerData.leftAxisX  > 0.90 ||
+        //     this.controllerData.rightAxisX > 0.90 )
+        //     this.flip("right");
     }
 });

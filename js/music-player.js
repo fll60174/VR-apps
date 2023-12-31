@@ -118,6 +118,15 @@ AFRAME.registerComponent("music-player", {
         this.musicDataIndex = 0;
         this.buttonIcon = "wait";
         this.loadMusic( this.musicDataIndex );
+
+        // add listener to control play/pause music with keyboard
+        document.addEventListener("keyup", (e)=> {
+            if (e.code === "KeyO") {
+                self.pauseMusic();
+            } else if (e.code === "KeyP") {
+                self.playMusic();
+            }k
+        });
     },
 
     loadMusic: function(index)
