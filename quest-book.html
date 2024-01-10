@@ -93,7 +93,7 @@ AFRAME.registerComponent('video-controls', {
 
     <a-entity 
         id="player" 
-        position="0 -0.3 0" 
+        position="0 -0.3 3" 
         player-move="controllerListenerId: #controller-data;
                      navigationMeshClass: environmentGround;">
         
@@ -137,12 +137,12 @@ AFRAME.registerComponent('video-controls', {
          assets/wonderland.pdf has pageWidth 646  and pageHeight 958
          assets/test10.pdf     has pageWidth 1224 and pageHeight 1584 
      -->
-    <a-image position="-2.75 1.0 -2" src="#jacksonzhao"></a-image>
-    <a-image position="-1.65 1.0 -2" src="#cheneylin"></a-image>	
-    <a-image position="-0.55 1.0 -2" src="#meganwei"></a-image>
-    <a-image position="0.55 1.0 -2" src="#monaliu"></a-image>
-    <a-image position="1.65 1.0 -2" src="#alexhao"></a-image>	
-    <a-image position="2.75 1.0 -2" src="#jasonxiao"></a-image>	
+    <a-image position="-2.4 1.0 -0.75" rotation="0 62.5 0" src="#jacksonzhao"></a-image>
+    <a-image position="-1.65 1.0 -1.5" rotation="0 37.5 0" src="#cheneylin"></a-image>	
+    <a-image position="-0.55 1.0 -2" rotation="0 12.5 0" src="#meganwei"></a-image>
+    <a-image position="0.55 1.0 -2" rotation="0 -12.5 0" src="#monaliu"></a-image>
+    <a-image position="1.65 1.0 -1.5" rotation="0 -37.5 0" src="#alexhao"></a-image>	
+    <a-image position="2.4 1.0 -0.75" rotation="0 -62.5 0" src="#jasonxiao"></a-image>	
 	
     <a-entity
         id="interactive-book"

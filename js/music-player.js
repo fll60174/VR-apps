@@ -96,6 +96,7 @@ AFRAME.registerComponent("music-player", {
             } else if (e.code === "Digit2") {
                 this.setPlayMode("loop");
             }
+            
         })
 
         let self = this;
@@ -131,8 +132,10 @@ AFRAME.registerComponent("music-player", {
                 self.pauseMusic();
             } else if (e.code === "KeyP") {
                 self.playMusic();
-            } else if (e.code === "KeyF") {
-
+            } else if (e.code === "KeyM") {
+                this.changeVolume(0.1)
+            } else if (e.code === "KeyN") {
+                this.changeVolume(-0.1)
             }
             
         });
