@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Model Viewer AR - VR</title>
+  <meta name="description" content="Model Viewer (VR / AR) • A-Frame">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="js/aframe-master-v1.3.0.min.js"></script>
+  <script src="js/animation-mixer.js"></script>
+  <script src="js/ar-shadows.js"></script>
+  <script src="js/model-viewer.js"></script>
+  <script src="js/background-gradient.js"></script>
+</head>
+<body>
+
+<a-scene
+  renderer="colorManagement: true;"
+  model-viewer="gltfModel: #wonkabar; title: WonkaBar"
+  xr-mode-ui="XRMode: xr">
+  <a-assets>
+		<!-- all model files from Poly by Google 
+			 (with texture modifications to reduce file size and increase brightness) -->
+		<a-asset-item id="wonkabar" src="models/kreader/scene.gltf" response-type="arraybuffer"></a-asset-item>
+	</a-assets>
+</a-scene>
+</body>
+</html>
