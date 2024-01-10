@@ -14,12 +14,13 @@
 
 <a-scene
   renderer="colorManagement: true;"
-  model-viewer="gltfModel: #wonkabar; title: WonkaBar"
+  model-viewer="gltfModel: #wonkabar; title: Wonka Bar"
   xr-mode-ui="XRMode: xr">
   <a-assets>
 		<!-- all model files from Poly by Google 
 			 (with texture modifications to reduce file size and increase brightness) -->
 		<a-asset-item id="wonkabar" src="models/kreader/scene.gltf" response-type="arraybuffer"></a-asset-item>
+    <img id="shadow" src="images/shadow.png"></img>
 	</a-assets>
 </a-scene>
 </body>
