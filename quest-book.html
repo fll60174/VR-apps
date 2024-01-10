@@ -68,6 +68,7 @@ AFRAME.registerComponent('video-controls', {
         <img id="border"   src="images/border.png" />
 	<img id="bookcover"   src="images/CharlottesWeb-Cover.jpg" />
 	<img id="wonkabar"   src="images/WonkaBar.jpg" />
+	<img id="charliehouse"   src="images/House.png" />
     <img id="wonkabarthumbnail"   src="images/WonkaBar_thumbnail.jpg" />
 	<img id="alexhao"   src="images/Midjourney-Alex.png" />
 	<img id="jacksonzhao"   src="images/Midjourney-Jackson.png" />
@@ -148,8 +149,8 @@ AFRAME.registerComponent('video-controls', {
 	
     <a-entity
         id="interactive-book"
-        position="0.2 1 -9"
-	rotation="0 0 0"
+        position="-1.5 1 -7"
+    	rotation="0 0 0"
         interactive-book="fileName: assets/ChocolateFactory.pdf;
                           pageWidth: 1224; pageHeight: 1584;
                           coverText: Charlie and the Chocolate Factory;
@@ -157,15 +158,23 @@ AFRAME.registerComponent('video-controls', {
     </a-entity>
         			
     <a-entity
-        position = "0 1 -5"
+        position = "1.5 1 -7"
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
     <a-link 
-        position = "4 1 -5"
+        position = "4 1 -7"
         href="model-viewer.html" 
-        title="Wonka Bar"
+        boaderColor="orange"
+        title="Portal to Crafting"
         image="#wonkabar">
+    </a-link>
+    <a-link 
+        position = "-4 1 -7"
+        href="house-model.html" 
+        boaderColor="orange"
+        title="Portal to Charlie's House"
+        image="#charliehouse">
     </a-link>
 <!--
     <a-link href="video-texture.html" title="Crafting" position="3 1 -5" image="#crafting"></a-link>	
