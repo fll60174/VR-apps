@@ -67,6 +67,8 @@ AFRAME.registerComponent('video-controls', {
         <img id="gradient" src="images/gradient-fade.png" />
         <img id="border"   src="images/border.png" />
 	<img id="bookcover"   src="images/CharlottesWeb-Cover.jpg" />
+	<img id="wonkabar"   src="images/WonkaBar.jpg" />
+    <img id="wonkabarthumbnail"   src="images/WonkaBar_thumbnail.jpg" />
 	<img id="alexhao"   src="images/Midjourney-Alex.png" />
 	<img id="jacksonzhao"   src="images/Midjourney-Jackson.png" />
 	<img id="meganwei"   src="images/Midjourney-Megan.png" />
@@ -159,6 +161,12 @@ AFRAME.registerComponent('video-controls', {
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
+    <a-link 
+        position = "4 1 -5"
+        href="model-viewer.html" 
+        title="Wonka Bar"
+        image="#wonkabar">
+    </a-link>
 <!--
     <a-link href="video-texture.html" title="Crafting" position="3 1 -5" image="#crafting"></a-link>	
 -->
