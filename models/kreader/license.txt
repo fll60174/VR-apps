@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wonka Bar
+* source:	https://sketchfab.com/3d-models/wonka-bar-a95a6f2afd5e4b00a036033e7fc7591b
+* author:	Ian Dowson (https://sketchfab.com/eonie316)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wonka Bar" (https://sketchfab.com/3d-models/wonka-bar-a95a6f2afd5e4b00a036033e7fc7591b) by Ian Dowson (https://sketchfab.com/eonie316) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
