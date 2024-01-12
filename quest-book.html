@@ -69,12 +69,13 @@ AFRAME.registerComponent('video-controls', {
 <a-scene environment="preset: goaland;" renderer="antialias: true;" >
         
     <a-assets>
+        <a-asset-item id="oompa" src=L14-assets/scene.gltf></a-asset-item>
         <img id="gradient" src="images/gradient-fade.png" />
         <img id="border"   src="images/border.png" />
 	<img id="bookcover"   src="images/CharlottesWeb-Cover.jpg" />
 	<img id="wonkabar"   src="images/WonkaBar.jpg" />
 	<img id="charliehouse"   src="images/House.png" />
-    <img id="wonkabarthumbnail"   src="images/WonkaBar_thumbnail.jpg" />
+        <img id="wonkabarthumbnail"   src="images/WonkaBar_thumbnail.jpg" />
 	<img id="alexhao"   src="images/Midjourney-Alex.png" />
 	<img id="jacksonzhao"   src="images/Midjourney-Jackson.png" />
 	<img id="meganwei"   src="images/Midjourney-Megan.png" />
@@ -99,6 +100,12 @@ AFRAME.registerComponent('video-controls', {
 
     <a-sky color = "#16F1DD"></a-sky>
 
+    <a-entity 
+        id= "oompa"
+	Position="0 -0.3 3" 
+	gltf-model="oompa">
+	    
+    </a-entity>
     <a-entity 
         id="player" 
         position="0 -0.3 3" 
