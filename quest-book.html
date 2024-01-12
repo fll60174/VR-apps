@@ -12,15 +12,11 @@
     <script src="js/pdf.js"></script>
     <script src="js/interactive-book.js"></script>
     <script src="js/music-player.js"></script>
+
 </head>
 
 <body>
-	<a-scene>
-	   <a-assets>
-		   <a-asset-item id="oompa" src=L14-assets/scene.gltf></a-asset-item>
-	   </a-assets>
-	   <a-entity gltf-model="oompa"></a-entity>
-	</a-scene>
+	
 <script>
 // load music into global variable for access by music-player component
 window["MusicData"] = [
@@ -69,7 +65,7 @@ AFRAME.registerComponent('video-controls', {
 <a-scene environment="preset: goaland;" renderer="antialias: true;" >
         
     <a-assets>
-        <a-asset-item id="oompa" src=L14-assets/scene.gltf></a-asset-item>
+        <img id="oompa" src="C:\Users\james\Downloads\hugh_grant_oompa_loompa_wonka_photo_to_3d/scene.gltf">
         <img id="gradient" src="images/gradient-fade.png" />
         <img id="border"   src="images/border.png" />
 	<img id="bookcover"   src="images/CharlottesWeb-Cover.jpg" />
@@ -187,6 +183,13 @@ AFRAME.registerComponent('video-controls', {
         boaderColor="orange"
         title="Portal to Charlie's House"
         image="#charliehouse">
+    </a-link>
+    <a-link 
+        position = "-7 1 -7"
+        href="scene.gltf" 
+        boaderColor="orange"
+        title="oompa lompa"
+        image="#oompa">
     </a-link>
 <!--
     <a-link href="video-texture.html" title="Crafting" position="3 1 -5" image="#crafting"></a-link>	
