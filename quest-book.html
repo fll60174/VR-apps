@@ -15,7 +15,12 @@
 </head>
 
 <body>
-
+	<a-scene>
+	   <a-assets>
+		   <a-asset-item id="oompa" src=L14-assets/scene.gltf></a-asset-item>
+	   </a-assets>
+	   <a-entity gltf-model="oompa"></a-entity>
+	</a-scene>
 <script>
 // load music into global variable for access by music-player component
 window["MusicData"] = [
