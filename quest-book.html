@@ -148,16 +148,16 @@ AFRAME.registerComponent('video-controls', {
          assets/wonderland.pdf has pageWidth 646  and pageHeight 958
          assets/test10.pdf     has pageWidth 1224 and pageHeight 1584 
      -->
-    <a-image position="-2.4 1.0 -0.75" rotation="0 62.5 0" src="#jacksonzhao"></a-image>
-    <a-image position="-1.65 1.0 -1.5" rotation="0 37.5 0" src="#cheneylin"></a-image>	
-    <a-image position="-0.55 1.0 -2" rotation="0 12.5 0" src="#meganwei"></a-image>
-    <a-image position="0.55 1.0 -2" rotation="0 -12.5 0" src="#monaliu"></a-image>
-    <a-image position="1.65 1.0 -1.5" rotation="0 -37.5 0" src="#alexhao"></a-image>	
-    <a-image position="2.4 1.0 -0.75" rotation="0 -62.5 0" src="#jasonxiao"></a-image>	
+    <a-image position="-2.4 1.0 -7.75" rotation="0 62.5 0" src="#jacksonzhao"></a-image>
+    <a-image position="-1.65 1.0 -8.5" rotation="0 37.5 0" src="#cheneylin"></a-image>	
+    <a-image position="-0.55 1.0 -9" rotation="0 12.5 0" src="#meganwei"></a-image>
+    <a-image position="0.55 1.0 -9" rotation="0 -12.5 0" src="#monaliu"></a-image>
+    <a-image position="1.65 1.0 -8.5" rotation="0 -37.5 0" src="#alexhao"></a-image>	
+    <a-image position="2.4 1.0 -7.75" rotation="0 -62.5 0" src="#jasonxiao"></a-image>	
 	
     <a-entity
         id="interactive-book"
-        position="-1.5 1 -7"
+        position="-1.5 1 -2"
     	rotation="0 0 0"
         interactive-book="fileName: assets/ChocolateFactory.pdf;
                           pageWidth: 1224; pageHeight: 1584;
@@ -166,31 +166,31 @@ AFRAME.registerComponent('video-controls', {
     </a-entity>
         			
     <a-entity
-        position = "1.5 1 -7"
+        position = "1.0 1 -2"
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
     <a-link 
-        position = "4 1 -7"
+        position = "5 1 -3"
         href="model-viewer.html" 
         boaderColor="orange"
         title="Portal to Crafting"
         image="#wonkabar">
     </a-link>
     <a-link 
-        position = "-4 1 -7"
+        position = "-5 1 -3"
         href="house-model.html" 
         boaderColor="orange"
         title="Portal to Charlie's House"
         image="#charliehouse">
     </a-link>
-    <a-link 
-        position = "-7 1 -7"
+    <!-- <a-link 
+        position = "-7 1 -3"
         href="scene.gltf" 
         boaderColor="orange"
         title="oompa lompa"
         image="#oompa">
-    </a-link>
+    </a-link> -->
 <!--
     <a-link href="video-texture.html" title="Crafting" position="3 1 -5" image="#crafting"></a-link>	
 -->
