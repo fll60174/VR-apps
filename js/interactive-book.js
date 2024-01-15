@@ -400,19 +400,19 @@ AFRAME.registerComponent("interactive-book", {
         }
 
         // user can only interact with book if it is enabled
-        // if ( !this.enabled )
-        //     return;
+        if ( !this.enabled )
+            return;
 
-        // if (this.controllerData.buttonA.pressed ||
-        //     this.controllerData.buttonX.pressed ||
-        //     this.controllerData.leftAxisX  < -0.90 ||
-        //     this.controllerData.rightAxisX < -0.90 )
-        //     this.flip("left");
+        if (this.controllerData.buttonA.pressed ||
+            this.controllerData.buttonX.pressed ||
+            this.controllerData.leftAxisX  < -0.90 ||
+            this.controllerData.rightAxisX < -0.90 )
+            this.flip("left");
 
-        // if (this.controllerData.buttonB.pressed ||
-        //     this.controllerData.buttonY.pressed ||
-        //     this.controllerData.leftAxisX  > 0.90 ||
-        //     this.controllerData.rightAxisX > 0.90 )
-        //     this.flip("right");
+        if (this.controllerData.buttonB.pressed ||
+            this.controllerData.buttonY.pressed ||
+            this.controllerData.leftAxisX  > 0.90 ||
+            this.controllerData.rightAxisX > 0.90 )
+            this.flip("right");
     }
 });
