@@ -90,6 +90,7 @@ AFRAME.registerComponent("music-player", {
         this.base.appendChild(this.imageArea);
 
         // "once" || "loop" || "all"
+        this.setPlayMode("once");
         document.addEventListener("keyup", (e)=> {
             if (e.code === "Digit1") {
                 this.setPlayMode("once");
