@@ -22,7 +22,7 @@
 window["MusicData"] = [
     {
         audioURL: "music/GoldenTicket.mp3",
-	imageURL: "images/ScreenMockup3.png", 
+	    imageURL: "images/ScreenMockup3.png", 
         songText: "Book: Charlie and the Chocolate Factory"
     }
     //,
@@ -68,18 +68,18 @@ AFRAME.registerComponent('video-controls', {
         <img id="oompa" src="models/scene.gltf">
         <img id="gradient" src="images/gradient-fade.png" />
         <img id="border"   src="images/border.png" />
-	<img id="bookcover"   src="images/CharlottesWeb-Cover.jpg" />
-	<img id="wonkabar"   src="images/WonkaBar.jpg" />
-	<img id="charliehouse"   src="images/House.png" />
+	    <img id="bookcover"   src="images/CharlottesWeb-Cover.jpg" />
+	    <img id="wonkabar"   src="images/WonkaBar.jpg" />
+	    <img id="charliehouse"   src="images/House.png" />
         <img id="wonkabarthumbnail"   src="images/WonkaBar_thumbnail.jpg" />
-	<img id="alexhao"   src="images/Midjourney-Alex.png" />
-	<img id="jacksonzhao"   src="images/Midjourney-Jackson.png" />
-	<img id="meganwei"   src="images/Midjourney-Megan.png" />
-	<img id="monaliu"   src="images/Midjourney-Mona.png" />
-	<img id="jasonxiao"   src="images/Midjourney-Jason.png" />
-	<img id="cheneylin"   src="images/Midjourney-Cheney.png" />
-	<img id="crafting"   src="images/crafting.png" />
-	<img id="iconBlank"      src="images/icon-blank.jpg" />        
+	    <img id="alexhao"   src="images/Midjourney-Alex.png" />
+	    <img id="jacksonzhao"   src="images/Midjourney-Jackson.png" />
+	    <img id="meganwei"   src="images/Midjourney-Megan.png" />
+	    <img id="monaliu"   src="images/Midjourney-Mona.png" />
+	    <img id="jasonxiao"   src="images/Midjourney-Jason.png" />
+	    <img id="cheneylin"   src="images/Midjourney-Cheney.png" />
+	    <img id="crafting"   src="images/crafting.png" />
+	    <img id="iconBlank"      src="images/icon-blank.jpg" />        
         <img id="iconWait"       src="images/icon-wait.jpg" />        
         <img id="iconPlay"       src="images/icon-play.jpg" />        
         <img id="iconPause"      src="images/icon-pause.jpg" />        
@@ -91,17 +91,11 @@ AFRAME.registerComponent('video-controls', {
         <img id="iconPlayAll"    src="images/icon-play-all.jpg" />        
         <img id="iconVolumeUp"   src="images/icon-volume-up.jpg" />        
         <img id="iconVolumeDown" src="images/icon-volume-down.jpg" />
-	<video id="tangyvideo" loop="true" src="video/barn-sketch.mp4" autoplay muted></video>
+    	<video id="tangyvideo" loop="true" src="video/barn-sketch.mp4" autoplay muted></video>
     </a-assets>
 
     <a-sky color = "#16F1DD"></a-sky>
 
-    <a-entity 
-        id= "oompa"
-	Position="0 -0.3 3" 
-	gltf-model="oompa">
-	    
-    </a-entity>
     <a-entity 
         id="player" 
         position="0 -0.3 3" 
@@ -109,8 +103,8 @@ AFRAME.registerComponent('video-controls', {
                      navigationMeshClass: environmentGround;">
         
         <a-camera>
-		<a-cursor></a-cursor>
-	</a-camera>
+		    <a-cursor></a-cursor>
+	    </a-camera>
     
         <a-entity 
             id="controller-data" 
@@ -170,6 +164,7 @@ AFRAME.registerComponent('video-controls', {
         music-player="controllerListenerId: #controller-data;
                       musicDataVariableName: MusicData;">
     </a-entity>
+
     <a-link 
         position = "5 1 -3"
         href="model-viewer.html" 
@@ -191,9 +186,6 @@ AFRAME.registerComponent('video-controls', {
         title="oompa lompa"
         image="#oompa">
     </a-link> -->
-<!--
-    <a-link href="video-texture.html" title="Crafting" position="3 1 -5" image="#crafting"></a-link>	
--->
     <!-- <a-plane
 		id = "video-border"
 		width = "1.7" height = "1.0"
